@@ -33,7 +33,7 @@ class MainWindow extends WindowBuilder {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(20),
-      child: Text("Well, hello there!"),
+      child: Center(child: Text("Welcome to NativeShell!")),
     );
   }
 
