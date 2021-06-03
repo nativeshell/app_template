@@ -11,5 +11,5 @@ cargo-emit = "0.1"
 nativeshell_build = "0.1.0"
 
 [dependencies]
-nativeshell = "0.1.0"
+nativeshell = "0.1.1"
 env_logger = "0.8.3"
