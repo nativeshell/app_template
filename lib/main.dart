@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
         ),
         child: Container(
           color: Colors.black,
-          child: WindowWidget(builder: (initData) {
-            WindowBuilder? builder;
+          child: WindowWidget(contextProvider: (initData) {
+            WindowContext? builder;
             builder ??= MainWindow();
             return builder;
           }),
@@ -28,20 +28,12 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MainWindow extends WindowBuilder {
+class MainWindow extends WindowContext {
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(20),
-      child: Center(child: Text("Welcome to NativeShell!")),
+      child: Center(child: Text('Welcome to NativeShell!')),
     );
-  }
-
-  @override
-  Future<void> initializeWindow(LocalWindow window, Size intrinsicContentSize) {
-    window.setGeometry(Geometry(
-      minContentSize: intrinsicContentSize,
-    ));
-    return super.initializeWindow(window, intrinsicContentSize);
   }
 }
