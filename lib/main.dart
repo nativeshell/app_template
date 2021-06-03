@@ -17,18 +17,20 @@ class MyApp extends StatelessWidget {
         ),
         child: Container(
           color: Colors.black,
-          child: WindowWidget(contextProvider: (initData) {
-            WindowContext? builder;
-            builder ??= MainWindow();
-            return builder;
-          }),
+          child: WindowWidget(
+            onCreateState: (initData) {
+              WindowState? state;
+              state ??= MainWindowState();
+              return state;
+            },
+          ),
         ),
       ),
     );
   }
 }
 
-class MainWindow extends WindowContext {
+class MainWindowState extends WindowState {
   @override
   Widget build(BuildContext context) {
     return Container(
