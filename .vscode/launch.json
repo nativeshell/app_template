@@ -8,11 +8,15 @@
             "name": "Flutter: Attach to Process",
             "type": "dart",
             "request": "attach",
-
-            "serviceInfoFile": "/tmp/native-shell-observatory2",
             "osx": {
-                "serviceInfoFile": "${env:TMPDIR}vmservice.app_template",
+                "serviceInfoFile": "${env:TMPDIR}vmservice.nativeshell_examples",
             },
-        }
+            "windows": {
+                "serviceInfoFile": "${env:TEMP}/vmservice.nativeshell_examples"
+            },
+            "linux": {
+                "serviceInfoFile": "${env:XDG_RUNTIME_DIR}/vmservice.nativeshell_examples"
+            }
+        },
     ]
 }
