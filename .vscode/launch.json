@@ -9,13 +9,13 @@
             "type": "dart",
             "request": "attach",
             "osx": {
-                "serviceInfoFile": "${env:TMPDIR}vmservice.nativeshell_examples",
+                "serviceInfoFile": "${env:TMPDIR}vmservice.app_template",
             },
             "windows": {
-                "serviceInfoFile": "${env:TEMP}/vmservice.nativeshell_examples"
+                "serviceInfoFile": "${env:TEMP}/vmservice.app_template"
             },
             "linux": {
-                "serviceInfoFile": "${env:XDG_RUNTIME_DIR}/vmservice.nativeshell_examples"
+                "serviceInfoFile": "${env:XDG_RUNTIME_DIR}/vmservice.app_template"
             }
         },
     ]
