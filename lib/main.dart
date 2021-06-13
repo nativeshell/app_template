@@ -32,6 +32,10 @@ class MyApp extends StatelessWidget {
 
 class MainWindowState extends WindowState {
   @override
+  WindowSizingMode get windowSizingMode =>
+      WindowSizingMode.atLeastIntrinsicSize;
+
+  @override
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(20),
