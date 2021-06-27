@@ -22,7 +22,8 @@ fn main() {
     context
         .window_manager
         .borrow_mut()
-        .create_window(Value::Null, None);
+        .create_window(Value::Null, None)
+        .unwrap();
 
     context.run_loop.borrow().run();
 }

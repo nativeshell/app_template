@@ -810,9 +810,9 @@ dependencies = [
 
 [[package]]
 name = "nativeshell"
-version = "0.1.3"
+version = "0.1.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "85da80fa47317efe96cbef7bbf54d973aab4be41843ebb8287b29cb831e8b3f3"
+checksum = "1cdb99522b0f95878a26fa91d94544bbeb2d80d66cfa59f6e1b2545289b12642"
 dependencies = [
  "block",
  "byte-slice-cast",
@@ -854,9 +854,9 @@ dependencies = [
 
 [[package]]
 name = "nativeshell_build"
-version = "0.1.3"
+version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4938b68684c370c03443a8a5289821581f22e5b0b1c1d6a28a15a82987886d68"
+checksum = "23bd5d015121ffdfce6c44e7a1fafc914349d5ac6c9d4d94f63ea2aa6b5e1514"
 dependencies = [
  "cargo-emit",
  "cmake",
@@ -1383,9 +1383,9 @@ checksum = "712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f"
 
 [[package]]
 name = "windows"
-version = "0.10.0"
+version = "0.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a43e544233e20425d5a58e9671cf76d6aed9e6f211508c050facb29b188dc10f"
+checksum = "d21e80c408bb5609db1c24323a942d34bc573178b5ab2d386b981bd3ed07122d"
 dependencies = [
  "const-sha1",
  "windows_gen",
@@ -1394,15 +1394,15 @@ dependencies = [
 
 [[package]]
 name = "windows_gen"
-version = "0.10.0"
+version = "0.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bc6283570a39b3594e31c64a498f48058758cc063eb087d972bb6476ad134a16"
+checksum = "6471156e3821094bf99528667c498b36eb58a092b187e9a03324d72744cf3646"
 
 [[package]]
 name = "windows_macros"
-version = "0.10.0"
+version = "0.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f757e7665f81f33ace9f89b0f0fc3a7c770e24ff4fa1475c6503bb35b4524893"
+checksum = "12cd9926fdba87226d95e0ec872736934f9df405cede2ca546e307e0d5d4b973"
 dependencies = [
  "syn",
  "windows_gen",
