@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:nativeshell/nativeshell.dart';
 
 void main() async {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -32,13 +33,13 @@ class MainWindowState extends WindowState {
     return MaterialApp(
       home: WindowLayoutProbe(
         child: DefaultTextStyle(
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
             fontSize: 14,
           ),
           child: Container(
-            padding: EdgeInsets.all(20),
-            child: Center(
+            padding: const EdgeInsets.all(20),
+            child: const Center(
               child: Text('Welcome to NativeShell!'),
             ),
           ),
